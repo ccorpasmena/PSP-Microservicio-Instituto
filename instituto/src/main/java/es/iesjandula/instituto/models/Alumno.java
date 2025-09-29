@@ -18,9 +18,9 @@ public class Alumno
 		return dni;
 	}
 
-	public void setDNI(String dNI)
+	public void setDni(String dni)
 	{
-		dni = dNI;
+		this.dni = dni;
 	}
 
 	public String getNombre()
@@ -63,4 +63,5 @@ public class Alumno
 		this.telefono = telefono;
 	}
 
+	
 }

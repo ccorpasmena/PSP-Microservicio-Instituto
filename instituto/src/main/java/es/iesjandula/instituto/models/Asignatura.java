@@ -51,5 +51,4 @@ public class Asignatura
 	{
 		this.horas = horas;
 	}
-
 }

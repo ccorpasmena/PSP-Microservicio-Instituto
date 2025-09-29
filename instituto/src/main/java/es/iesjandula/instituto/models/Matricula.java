@@ -7,41 +7,26 @@ public class Matricula
 	private String dniAlumno;
 	private String idAsignatura;
 
-	/**
-	 * 
-	 */
 	public Matricula()
 	{
 
 	}
 
-	/**
-	 * @return the dniAlumno
-	 */
 	public String getDniAlumno()
 	{
 		return dniAlumno;
 	}
 
-	/**
-	 * @param dniAlumno the dniAlumno to set
-	 */
 	public void setDniAlumno(String dniAlumno)
 	{
 		this.dniAlumno = dniAlumno;
 	}
 
-	/**
-	 * @return the idAsignatura
-	 */
 	public String getIdAsignatura()
 	{
 		return idAsignatura;
 	}
 
-	/**
-	 * @param idAsignatura the idAsignatura to set
-	 */
 	public void setIdAsignatura(String idAsignatura)
 	{
 		this.idAsignatura = idAsignatura;
@@ -54,16 +39,16 @@ public class Matricula
 	}
 
 	@Override
-	public boolean equals(Object objetc)
+	public boolean equals(Object obj)
 	{
-		if (this == objetc)
+		if (this == obj)
 			return true;
-		if (objetc == null)
+		if (obj == null)
 			return false;
-		if (!(objetc instanceof Matricula))
+		if (!(obj instanceof Matricula))
 			return false;
-		Matricula matricula = (Matricula) objetc;
-
-		return this.dniAlumno == matricula.dniAlumno && this.idAsignatura == matricula.idAsignatura;
+		Matricula matricula = (Matricula) obj;
+		return Objects.equals(this.dniAlumno, matricula.dniAlumno)
+				&& Objects.equals(this.idAsignatura, matricula.idAsignatura);
 	}
 }
